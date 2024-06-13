@@ -970,8 +970,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.11, y: 2.88, z: -47.9}
+  m_LocalRotation: {x: 0.26584116, y: -0.41045648, z: 0.12642972, w: 0.86305827}
+  m_LocalPosition: {x: 7.5227547, y: 8.506607, z: -43.11709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1217,6 +1217,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &508527224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 508527226}
+  - component: {fileID: 508527225}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: LOSE
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &508527225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508527224}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 152.1, y: 13.8, z: 292.85}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &508527226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508527224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.610155, y: -19.6, z: 42.21678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614242845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,13 +1368,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614242845}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 4.83, z: 124.49}
-  m_LocalScale: {x: 14.516666, y: -6.464286, z: 2.4407}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3, y: 1.97, z: 144.1}
+  m_LocalScale: {x: 16.077208, y: -43.111248, z: 2.4407}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &638027809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,14 +1439,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638027809}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.11, y: 2.88, z: -47.9}
+  m_LocalRotation: {x: 0.26584116, y: -0.41045648, z: 0.12642972, w: 0.86305827}
+  m_LocalPosition: {x: 7.5227547, y: 8.506607, z: -43.11709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1012033264}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 34.24, y: -50.87, z: 0}
 --- !u!1 &983316660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,10 +1810,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317052908}
-  - component: {fileID: 1317052910}
   - component: {fileID: 1317052907}
   - component: {fileID: 1317052906}
   - component: {fileID: 1317052904}
+  - component: {fileID: 1317052910}
   - component: {fileID: 1317052909}
   - component: {fileID: 1317052911}
   m_Layer: 0
@@ -1920,6 +1973,54 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: fe533660-fc15-4934-b796-bc3520fe2d99
     m_ActionName: Gameplay/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1317052910}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Enlarge
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a7b8b23d-e509-41f5-814b-5b48e8ff663a
+    m_ActionName: Gameplay/Enlarge[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1317052910}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Shrink
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 28f33164-a9a6-44ea-a865-ec0d78edae97
+    m_ActionName: Gameplay/Shrink[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1317052910}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Default
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a478b84b-8630-420e-abea-55979f060dad
+    m_ActionName: Gameplay/Default[/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -1941,6 +2042,10 @@ MonoBehaviour:
   jumpForce: 20
   gravity: 40
   brakeForce: 15
+  enlarge: 3
+  shrink: {x: 0.5, y: 0.5, z: 0.5}
+  duration: 2
+  ease: 28
 --- !u!135 &1317052911
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3034,3 +3139,4 @@ SceneRoots:
   - {fileID: 614242849}
   - {fileID: 1187321054}
   - {fileID: 983316665}
+  - {fileID: 508527226}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using DG.Tweening;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance { get; private set; }
@@ -7,6 +8,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float gravity;
     [SerializeField] private float brakeForce;
+    [SerializeField] private float enlarge;
+    [SerializeField] private Vector3 shrink;
+    [SerializeField] private float duration;
+    [SerializeField] private Ease ease;
     private Vector2 movement = Vector2.zero;
     private Rigidbody _compRigidbody;
     private void Awake()
@@ -33,6 +38,27 @@ public class PlayerController : MonoBehaviour
             _compRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
+    public void Enlarge(InputAction.CallbackContext context)
+    {
+        if (context.performed == true)
+        {
+            this.gameObject.transform.DOScale(Vector3.one * enlarge, duration).SetEase(ease);
+        }
+    }
+    public void Shrink(InputAction.CallbackContext context)
+    {
+        if (context.performed == true)
+        {
+            this.gameObject.transform.DOScale(shrink, duration).SetEase(ease);
+        }
+    }
+    public void Default(InputAction.CallbackContext context)
+    {
+        if (context.performed == true)
+        {
+            this.gameObject.transform.DOScale(Vector3.one, duration).SetEase(ease);
+        }
+    }
     private void FixedUpdate()
     {
         _compRigidbody.AddForce(Vector3.down * gravity);
@@ -41,6 +67,13 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 brakeForce = -_compRigidbody.velocity.normalized * _compRigidbody.velocity.magnitude * this.brakeForce;
             _compRigidbody.AddForce(brakeForce, ForceMode.Force);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "LOSE")
+        {
+            GameManagerController.Instance.LoadScene("GameOver");
         }
     }
 }
